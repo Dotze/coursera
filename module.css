@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    overflow: auto;
+}
+section{
+    border: 1px solid black;
+    width: 31.06%;
+    float: left;
+    margin: 10px;
+    background-color: #b9adad66;
+}
+.title1, .title2, .title3{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    width: 30.01%;
+    margin: 0px;
+    font-size: 125%;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left: 70%;
+}
+#header{
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 60px;
+}
+p{
+    padding: 2px;
+    margin: 15px 20px 5px 15px;
+    position: relative;
+    top: -10px;
+
+}
+.title1{
+    background-color: palevioletred;
+}
+.title2{
+    background-color: orangered;
+    color: white;
+}
+.title3{
+    background-color: bisque;
+}
+@media (min-width: 992px) {
+    section{
+        width: 31.06%;
+        margin-right: 10px;
+        float: left;
+    }
+}
+@media (min-width:768px) and (max-width: 991px) {
+    section.one, section.two{
+        width: 47.35%;
+    }
+    section.three{
+        width: 97%;
+    }
+    #header{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    section{
+        width: 97%;
+        margin-right: 15px;
+    }
+    #header{
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+}
